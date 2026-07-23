@@ -79,10 +79,10 @@
 
       <nav class="nav" id="nav">
         <a href="#inicio">Inicio</a>
-        <a href="#sobre">Sobre la formación</a>
+        <a href="#sobre">Mi historia</a>
         <a href="#programa">Programa</a>
         <a href="#incluye">¿Qué incluye?</a>
-        <a href="#contacto">Contacto</a>
+        <a href="#preguntas">Contacto</a>
       </nav>
 
       <a href="#inversion" class="btn btn--primary btn--sm nav__cta">Inscribirme</a>
@@ -378,6 +378,109 @@
     </div>
   </section>
 
+   <!-- ===================== INVERSIÓN / PAGAMENTO ===================== -->
+  <section class="section section--alt" id="inversion">
+    <div class="container">
+      <div class="payment-card" data-reveal>
+        <div class="payment-card__header">
+          <h2 class="payment-card__title">Inversión <span class="squiggle">〰</span></h2>
+          <p class="payment-card__subtitle">Asegurá tu lugar en la formación eligiendo la opción que prefieras</p>
+        </div>
+
+        <!-- Opções de Pagamento -->
+        <div class="payment-options">
+          <!-- Opção 1: Pago Único -->
+          <div class="payment-option payment-option--featured">
+            <div class="payment-option__badge">Recomendado</div>
+            <h3 class="payment-option__title">Pago Único</h3>
+            <div class="payment-card__price">
+              <span class="currency">US$</span>
+              <span class="amount">690</span>
+              <span class="period">/ total</span>
+            </div>
+          </div>
+
+          <div class="payment-divider">
+            <span>o</span>
+          </div>
+
+          <!-- Opção 2: Mensal -->
+          <div class="payment-option">
+            <div class="payment-card__price">
+              <span class="currency">US$</span>
+              <span class="amount">60</span>
+              <span class="period">/ mes</span>
+            </div>
+            <p class="payment-option__duration">Durante 12 meses</p>
+          </div>
+        </div>
+<!--
+        <ul class="check-list payment-card__list">
+          <li><span class="check-icon">✓</span> Acceso a los 7 encuentros en vivo</li>
+          <li><span class="check-icon">✓</span> Acceso a las grabaciones de las clases</li>
+          <li><span class="check-icon">✓</span> Material de apoyo y lectura</li>
+          <li><span class="check-icon">✓</span> Certificado de participación</li>
+        </ul>
+-->
+        <div class="payment-card__actions">
+          <!-- <button class=" btn btn--primary btn--block" onclick="abrirModalPagamento()"> Quiero me incribir</button> 
+
+          <p class="payment-card__secure">
+            <i class="fa-solid fa-shield-halved"></i> Pago seguro y protegido
+          </p> -->
+        </div>
+      </div>
+
+      <!--  ============= MODAL DE PAGAMENTO =============  -->
+      <div id="modalPagamento" class="modal-overlay">
+        <div class="modal-content">
+          <h3>Elige la forma de pago</h3>
+          <p>El valor puede aparecer en Reales Brasileños ya que mi cuenta es de Brasil.</p>
+
+          <div class="payment-option">
+            <p>Pago único: <strong>US$ 195,00</strong></p>
+            <a href="https://www.paypal.com/ncp/payment/8R6PAH8R39V7S" class="btn btn--primary" target="_blank"
+              onclick="abrirModalConfirmacao()">Pagar ahora <span><img src="https://cdn.simpleicons.org/paypal/F5F5F5" alt="PayPal" width="24" height="24"></span></a>
+
+            <a href="https://wise.com/pay/r/UfIxovxx234_boI" class="btn btn--primary" target="_blank"
+              onclick="abrirModalConfirmacao()">Pagar ahora <span><img src="https://cdn.simpleicons.org/wise/F5F5F5" alt="Wise" width="24" height="24"></span></a>
+
+            <a href="https://nubank.com.br/cobranca/my5bzIQ5Ej2wsb4q" class="btn btn--primary" target="_blank"
+              onclick="abrirModalConfirmacao()">Pagar ahora <span><img src="https://cdn.simpleicons.org/nubank/F5F5F5" alt="Nubank" width="24" height="24"></span></a>
+            </div>
+            
+            <div class="payment-option">
+              <p>Financiado: <strong>3 cuotas de US$ 70,00</strong></p>
+              <a href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-3SY35033LH149430RNJLHOYY" class="btn btn--primary" target="_blank"
+                onclick="abrirModalConfirmacao()">Pagar ahora <span><img src="https://cdn.simpleicons.org/paypal/F5F5F5" alt="PayPal" width="24" height="24"></span></a>
+
+              <a href="https://wise.com/pay/r/i1pGY9ULZzp6MOY" class="btn btn--primary" target="_blank"
+                onclick="abrirModalConfirmacao()">Pagar ahora <span><img src="https://cdn.simpleicons.org/wise/F5F5F5" alt="Wise" width="24" height="24"></span></a>
+
+              <a href="https://nubank.com.br/cobranca/p1ZFTS1cXj2wsb4q" class="btn btn--primary" target="_blank"
+                onclick="abrirModalConfirmacao()">Pagar ahora <span><img src="https://cdn.simpleicons.org/nubank/F5F5F5" alt="Nubank" width="24" height="24"></span></a>
+            
+          </div>
+
+          <button onclick="fecharModal()" class="btn-close">Cerrar</button>
+        </div>
+      </div>
+
+      <div id="modalConfirmacao" class="modal-overlay">
+        <div class="modal-content" id="confirm-modal">
+          <h3>¡Libera tu acceso!</h3>
+          <p>Después de realizar el pago, envía el comprobante para solicitar tu acceso.</p>
+
+          <a href="https://wa.me/5491112345678" target="_blank" class="btn btn--primary" id="btn-confirm">
+            Enviar comprobante por WhatsApp
+          </a>
+
+          <button onclick="fecharTudo()" class="btn-close">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ===================== FOOTER ===================== -->
   <footer class="footer" id="preguntas">
     <div class="container footer__grid">
@@ -417,7 +520,7 @@
         <h3 class="footer__nav-title">Constelaciones Familiares</h3>
         <ul class="footer__nav-list">
           <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#sobre">Sobre la formación</a></li>
+          <li><a href="#sobre">Mi historia</a></li>
           <li><a href="#programa">Programa</a></li>
           <li><a href="#informacion">Información</a></li>
         </ul>
